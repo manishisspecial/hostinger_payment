@@ -5,499 +5,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Cart | Hostinger</title>
+    <title> Cart | Hostinger</title>
 </head>
 
-<body class="bg-zinc-100">
+<body>
 
-
-    <!-- 1 start -->
-    <div
-        class="container flex justify-between 2xl:px-6 xl:px-6 py-4 px-10 min-[425px]:gap-12 max-[767px]:gap-12 min-[425px]:px-2 max-[767px]:px-2 min-[375px]:gap-8 max-[424px]:gap-8 min-[375px]:px-2 max-[424px]:px-2 min-[320px]:gap-0 max-[376px]:gap-0 min-[320px]:px-0 max-[376px]:px-0">
-        <img class="2xl:scale-100 xl:scale-100 min-[320px]:scale-75 max-[767px]:scale-75" src="Media/images/hostinger-black.svg" alt="">
-        <div class="container flex 2xl:px-2 xl:px-2 justify-end gap-4 min-[320px]:-ml-3 max-[376px]:-ml-3">
-            <button
-                class="border-solid border-2 border-indigo-600 text-indigo-600 font-bold rounded-lg p-3 hover:bg-violet-100 min-[425px]:text-sm max-[767px]:text-sm min-[425px]:px-2 max-[767px]:px-2">Currency
-                <select name="" id="converter" onchange="Currency()">
-                    <option value="INR">INR-₹</option>
-                    <option value="Euro">Euro-€</option>
-                    <option value="Dollar">Dollar-$</option>
-                    <option value="Pounds">Pounds-£</option>
-                </select>
-            </button>
-            <button
-                class="border-solid border-2 border-indigo-600 text-indigo-600 font-bold rounded-lg p-3 hover:bg-violet-100 min-[425px]:text-sm max-[767px]:text-sm min-[425px]:text-nowrap max-[767px]:text-nowrap min-[425px]:px-2 max-[767px]:px-2">Log
-                In</button>
-        </div>
-    </div>
-    <!-- 1 end -->
-
-    <!-- 2 start -->
-    <div
-        class="container flex 2xl:px-5 xl:px-5 lg:max-w-7xl lg:items-center lg:justify-center lg:px-20 md:px-20 min-[425px]:max-w-3xl max-[768px]:max-w-3xl min-[320px]:px-10 max-[768px]:px-10">
-        <div
-            class="container 2xl:py-12 2xl:gap-6 xl:py-12 xl:gap-6 py-6 opacity-65 rounded-md flex justify-between text-white bg-indigo-600 min-[320px]:flex-col max-[767px]:flex-col">
-            <div class="container flex 2xl:py-6 xl:py-6 flex-col items-start justify-around px-10 min-[425px]:px-12 max-[768px]:px-12">
-                <p class="2xl:text-5xl xl:text-5xl text-center font-bold lg:text-2xl md:text-lg min-[425px]:text-sm max-[768px]:text-sm">🔥 Limited-time
-                    deal:
-                    don’t miss big discounts + 3 extra months FREE with a
-                    48
-                    month plan</p>
-            </div>
-            <div
-                class="container flex flex-col min-[425px]:text-sm max-[768px]:text-sm min-[425px]:pt-3 max-[768px]:pt-3 min-[425px]:gap-2 max-[768px]:gap-2">
-                <div
-                    class="container 2xl:gap-16 xl:gap-16 flex items-center justify-end px-10 min-[425px]:justify-center max-[768px]:justify-center min-[320px]:justify-center max-[376px]:justify-center">
-                    <p class="bg-indigo-400 2xl:p-10 2xl:text-6xl xl:p-10 xl:text-6xl font-bold p-3 rounded-md lg:text-2xl mx-2 min-[425px]:text-sm max-[768px]:text-sm">01</p>
-                    <p class="xl:text-6xl">:</p>
-                    <p class="bg-indigo-400 2xl:p-10 2xl:text-6xl xl:p-10 xl:text-6xl font-bold p-3 rounded-md lg:text-2xl mx-2 min-[425px]:text-sm max-[768px]:text-sm">17</p>
-                    <p class="xl:text-6xl">:</p>
-                    <p class="bg-indigo-400 2xl:p-10 2xl:text-6xl xl:p-10 xl:text-6xl font-bold p-3 rounded-md lg:text-2xl mx-2 min-[425px]:text-sm max-[768px]:text-sm">25</p>
-                    <p class="xl:text-6xl">:</p>
-                    <p class="bg-indigo-400 2xl:p-10 2xl:text-6xl xl:p-10 xl:text-6xl font-bold p-3 rounded-md lg:text-2xl mx-2 min-[425px]:text-sm max-[768px]:text-sm">04</p>
+    <!-- component -->
+    <nav class=" bg-white w-full flex relative justify-between items-center mx-auto px-8 h-20">
+        <!-- logo -->
+        <div class="inline-flex">
+            <a class="_o6689fn" href="/">
+                <div class="hidden md:block">
+                    <img src="assets/media/images/hostinger-black.svg" alt="">
                 </div>
-                <div
-                    class="container 2xl:gap-48 xl:gap-48 flex justify-end text-sm items-center px-12 gap-6 min-[425px]:justify-center max-[768px]:justify-center min-[320px]:justify-center max-[376px]:justify-center min-[425px]:gap-3 max-[768px]:gap-3">
-                    <p class="2xl:text-4xl 2xl:ml-6 xl:text-4xl xl:ml-6 font-bold mr-3 min-[425px]:text-sm max-[768px]:text-sm">Days</p>
-                    <p class="2xl:text-4xl 2xl:ml-0 xl:text-4xl xl:ml-0 font-bold min-[425px]:text-sm max-[768px]:text-sm">Hours</p>
-                    <p class="2xl:text-4xl 2xl:-ml-4 xl:text-4xl xl:-ml-4 font-bold min-[425px]:text-sm max-[768px]:text-sm" style="margin-right: -5px;">Minutes</p>
-                    <p class="2xl:text-4xl 2xl:-ml-7 xl:text-4xl xl:-ml-7 font-bold min-[425px]:text-sm max-[768px]:text-sm">Seconds</p>
+                <div class="block md:hidden">
+                    <img src="assets/media/images/hostinger-black.svg" alt="">
+                </div>
+            </a>
+        </div>
+
+        <!-- end logo -->
+
+
+
+        <!-- login -->
+        <div class="flex-initial">
+            <div class="flex justify-end items-center relative">
+                <div class="flex mr-4 items-center">
+                    <a class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full" href="#">
+                        <div class="flex items-center relative cursor-pointer whitespace-nowrap">Login</div>
+                    </a>
                 </div>
             </div>
         </div>
+        <!-- end login -->
+    </nav>
 
-    </div>
-    <!-- 2 end -->
-    <!-- 3 start -->
-    <div
-        class="container 2xl:scale-100 2xl:px-10 xl:scale-100 xl:px-10 px-20 py-12 flex items-center lg:flex-row lg:scale-100 md:flex-row md:scale-100 min-[320px]:flex-col max-[767px]:flex-col min-[375px]:scale-90 max-[424px]:scale-90">
-        <p class="2xl:text-6xl xl:text-6xl font-bold lg:text-4xl md:text-2xl min-[425px]:text-md max-[768px]:text-md">
-            You’re almost there! Complete your order</p>
-        <div class="flex 2xl:max-w-96 xl:max-w-96 px-9 max-w-72 gap-3 ml-8">
-            <img src="Media/images/MoneyBackGuarantee.svg" alt="">
-            <p class="2xl:text-6xl xl:text-6xl font-bold">30-day money-back guarantee</p>
+    <!-- Limited time deal start -->
+
+    <div class="container mx-auto bg-indigo-600 opacity-65 rounded-md text-white flex justify-between p-16">
+        <div class="flex flex-col gap-5">
+            <p
+                class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
+                🔥 Limited-time deal:
+            </p>
+
+            <p class="2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
+                don’t miss big discounts + 2 extra months FREE with a 48 month plan
+            </p>
+        </div>
+        <div class="flex flex-col bg-blue-800 px-10 py-6 rounded-md gap-2">
+            <p
+                class="text-center 2xl:text-3xl xl:text-2xl lg:text-xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
+                Deal ends in
+            </p>
+            <p
+                class="2xl:text-3xl xl:text-2xl lg:text-xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
+                14&nbsp;:&nbsp;&nbsp;59&nbsp;:&nbsp;58&nbsp;:&nbsp;57
+            </p>
         </div>
     </div>
-    <!-- 3 end -->
-    <!-- 4 start -->
-    <div class="container py-3 px-20">
-        <p class="lg:text-2xl md:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-nowrap max-[376px]:text-nowrap">
-            Selected plan: &nbsp; <span class="font-bold lg:text-2xl md:text-lg  min-[425px]:text-sm max-[768px]:text-sm">Premium Web
-                Hosting</span></p>
-    </div>
-    <div class="container py-3 px-20">
-        <p class="lg:text-4xl font-bold md:text-2xl">1. Check your order</span></p>
-    </div>
-    <!-- 4 end -->
-    <!-- 5 start -->
-    <div
-        class="container px-20 flex gap-7 lg:flex-row md:flex-row lg:px-6 md:px-2 md:gap-3 min-[320px]:flex-col max-[767px]:flex-col min-[320px]:py-4 max-[424px]:py-4 min-[320px]:gap-12 max-[424px]:gap-12">
 
-        <!-- <div class="lg:flex lg:gap-44"> -->
+    <!-- Limited time deal end -->
 
-        <button onclick="Premium_One()"
-            class="border_box_1 bg-white container shadow-2xl max-w-72 flex flex-col items-center lg:px-6 px-4 py-5 lg:max-w-60 lg:scale-100 md:scale-100 min-[375px]:scale-110 max-[424px]:scale-110 hover:cursor-pointer">
+    <!-- cart start -->
+    <div class="container mx-auto py-6">
+        <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
+            Your Cart
+        </p>
+    </div>
+
+    <div class="container mx-auto py-6 flex gap-6 px-10">
+        <!-- first container -->
+        <div class="container bg-white flex flex-col rounded-md shadow-lg shadow-zinc-800">
             <div class="container">
-                <div class="border-2 border-indigo-600" style="width: 20px; height: 20px; border-radius: 50%;">
-                </div>
+                <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Premium Web Hosting</p>
             </div>
-            <div class="container flex flex-col items-center gap-2">
-                <p class="font-bold pb-12 lg:text-2xl md:text-sm" id="plan_one_month">1 MONTH</p>
-                <p class="lg:text-4xl font-bold md:text-2xl" id="one_month">₹599.00</p>
-                <p class="font-bold  lg:text-2xl md:text-sm">INR / month</p>
-                <p class="text-sm max-w-48 text-center pb-2 lg:text-lg">Plan renews at ₹599.00/month on 31/08/2024</p>
-            </div>
-        </button>
-
-        <button onclick="Premium_Two()" class="container min-[375px]:scale-110 max-[424px]:scale-110 lg:scale-100 md:scale-100">
-            <div class="container border_box_2">
-                <div
-                    class="bg-white container shadow-2xl max-w-72 flex flex-col items-center lg:px-6 px-4 py-5 hover:cursor-pointer">
-                    <div class="container">
-                        <div class="border-2 border-indigo-600" style="width: 20px; height: 20px; border-radius: 50%;">
-                        </div>
-                    </div>
-                    <div class="container flex flex-col items-center gap-2">
-                        <p class="font-bold pb-3 md:text-sm lg:text-2xl">12 MONTHS</p>
-                        <p class="text-lg line-through md:text-sm" id="twelve_month">₹599.00</p>
-                        <p class="lg:text-4xl font-bold md:text-2xl" id="one_year">₹219.00</p>
-                        <p class="font-bold md:text-sm lg:text-2xl">INR / month</p>
-                        <p class="text-sm max-w-48 text-center pb-2 lg:text-lg">Plan renews at ₹379.00/month on
-                            31/07/2025</p>
-                    </div>
-                </div>
-                <p class="bg-gray-300 py-1 text-white text-center max-w-72 md:text-sm lg:text-lg">Free domain for 1st
-                    year</p>
-            </div>
-        </button>
-        <!-- </div> -->
-
-
-        <!-- <div class="lg:flex lg:gap-44"> -->
-
-        <button onclick="Premium_Three()" class="container min-[375px]:scale-110 max-[424px]:scale-110 lg:scale-100 md:scale-100">
-            <div class="container border_box_3">
-
-                <div
-                    class="bg-white container shadow-2xl max-w-72 flex flex-col items-center lg:px-6 px-4 py-5 hover:cursor-pointer">
-                    <div class="container">
-                        <div class="border-2 border-indigo-600" style="width: 20px; height: 20px; border-radius: 50%;">
-                        </div>
-                    </div>
-                    <div class="container flex flex-col items-center gap-2">
-                        <p class="font-bold pb-3 md:text-sm lg:text-2xl">24 MONTHS</p>
-                        <p class="text-lg line-through md:text-sm" id="twentyfour_month">₹599.00</p>
-                        <p class="lg:text-4xl font-bold md:text-2xl" id="two_year">₹179.00</p>
-                        <p class="font-bold md:text-sm lg:text-2xl">INR / month</p>
-                        <p class="text-sm max-w-48 text-center pb-2 lg:text-lg">Plan renews at ₹339.00/month on
-                            31/07/2026</p>
-                    </div>
-                </div>
-                <p class="bg-gray-300 py-1 text-white text-center max-w-72 md:text-sm lg:text-lg">Free domain for 1st
-                    year</p>
-            </div>
-        </button>
-
-        <button onclick="Premium_Four()" class="container min-[375px]:scale-110 max-[424px]:scale-110 lg:scale-100 md:scale-100">
-            <div class="container border_box_4">
-
-                <div
-                    class="bg-white container shadow-2xl max-w-72 flex flex-col items-center lg:px-6 px-4 py-5 hover:cursor-pointer">
-                    <div class="container">
-                        <div class="border-2 border-indigo-600" style="width: 20px; height: 20px; border-radius: 50%;">
-                        </div>
-                    </div>
-                    <div class="container flex flex-col items-center gap-2">
-                        <p class="font-bold md:text-sm lg:text-2xl">48 MONTHS</p>
-                        <p class="font-bold text-sm" style="margin-top: -5px; margin-bottom: -5px;">+3 months free
-                        </p>
-                        <p class="text-lg line-through md:text-sm" style="margin-top: -5px;" id="forty_eight_month">
-                            ₹599.00</p>
-                        <p class="lg:text-4xl font-bold md:text-2xl" id="four_year">₹149.00</p>
-                        <p class="md:text-sm font-bold lg:text-2xl">INR / month</p>
-                        <p class="text-sm max-w-48 text-center pb-2 lg:text-lg">Plan renews at ₹249.00/month on
-                            31/10/2028</p>
-                    </div>
-                </div>
-                <p class="bg-gray-300 py-1 text-white text-center max-w-72 md:text-sm lg:text-lg">Free domain for 1st
-                    year</p>
-            </div>
-        </button>
-        <!-- </div> -->
-
-    </div>
-
-    <!-- 5 end -->
-    <div class="container py-3 px-20">
-        <p class="lg:text-4xl font-bold md:text-2xl">2. Create your account</span></p>
-    </div>
-    <div class="container py-3 px-20">
-        <p class="text-md min-[320px]:text-nowrap max-[376px]:text-nowrap">Already have an account? <span
-                class="text-indigo-600 font-bold">Log in</span></p>
-    </div>
-
-
-    <!-- 6 start -->
-    <div
-        class="container px-20 flex items-center justify-center lg:flex-row md:flex-row md:gap-4 min-[425px]:flex-col max-[768px]:flex-col">
-        <div class="container flex min-[425px]:justify-center max-[768px]:justify-center">
-            <button
-                class="flex px-52 py-2 rounded-lg gap-2 hover:bg-gray-100 bg-white lg:px-60 md:px-36 md:ml-1 min-[425px]:px-32 max-[768px]:px-32"><img
-                    src="Media/images/google.png" alt="" style="width: 25px; height: 25px;">Google</button>
-        </div>
-        <div class="container text-center">OR</div>
-        <div
-            class="container flex flex-col gap-7 min-[425px]:justify-center max-[768px]:justify-center min-[425px]:items-center max-[768px]:items-center">
-            <input
-                class="md:px-36 min-[425px]:text-sm max-[768px]:text-sm min-[425px]:w-80 max-[768px]:w-80 min-[425px]:px-4 max-[768px]:px-4 py-2 rounded-md"
-                type="text" name="" id="" placeholder="Email Address">
-            <input
-                class="md:px-36 min-[425px]:text-sm max-[768px]:text-sm min-[425px]:w-80 max-[768px]:w-80 min-[425px]:px-4 max-[768px]:px-4 py-2 rounded-md"
-                type="text" name="" id="" placeholder="Password">
-        </div>
-
-    </div>
-
-    <!-- 6 end -->
-
-    <div class="container py-3 px-20">
-        <p class="lg:text-4xl font-bold md:text-2xl">3. Select payment</span></p>
-    </div>
-
-    <!-- 7 start -->
-    <div
-        class="container px-20 flex lg:px-2 lg:gap-0 lg:flex-row md:flex-row md:px-4 md:gap-8 min-[320px]:flex-col max-[767px]:flex-col min-[320px]:px-2 max-[767px]:px-2">
-        <div
-            class="container flex flex-col lg:max-w-7xl gap-4 lg:gap-4 min-[425px]:text-sm max-[768px]:text-sm min-[425px]:items-center max-[768px]:items-center min-[425px]:mb-12 max-[768px]:mb-12">
-
-            <p class="uppercase font-medium text-sm">Instant pay</p>
-
-            <div
-                class="container max-w-80 lg:max-w-80 bg-white gap-2 py-4 px-4 lg:px-2 lg:gap-6 flex lg:flex-row md:px-2 md:gap-6">
-                <div class="max-w-6 flex items-center">
-                    <div class="border-2 border-indigo-600" style="width: 15px; height: 15px; border-radius: 50%;">
-                    </div>
-                </div>
-                <div class="flex md:gap-2">
-                    <span class="text-nowrap text-lg font-bold">Credit Card</span> <img
-                        src="Media/images/razorpay.card.svg" alt="">
-                </div>
-            </div>
-
-            <div class="container flex max-w-80 bg-white gap-2 py-4 px-4 lg:px-2 lg:gap-6 md:px-2 md:gap-6">
-                <div class="container max-w-6 flex items-center">
-                    <div class="border-2 border-indigo-600" style="width: 15px; height: 15px; border-radius: 50%;">
-                    </div>
-                </div>
-                <div class="container">
-                    <p class="flex justify-around md:justify-start md:items-baseline md:gap-8">
-                        <span class="font-bold">UPI </span> <img class="" src="Media/images/razorpay.upi.svg" alt="">
-                    </p>
-                </div>
-            </div>
-
-            <div class="container flex max-w-80 bg-white gap-2 py-4 px-4 lg:px-2 lg:gap-6 md:px-2 md:gap-6">
-                <div class="container max-w-6 flex items-center">
-                    <div class="border-2 border-indigo-600" style="width: 15px; height: 15px; border-radius: 50%;">
-                    </div>
-                </div>
-                <div class="container">
-                    <p class="flex justify-around lg:gap-2 md:justify-start md:items-baseline md:gap-8">
-                        <span class="font-bold">PayPal</span> <img src="Media/images/braintree_paypal.svg" alt="">
-                    </p>
-                </div>
-            </div>
-
-            <p>1 business day</p>
-
-            <div class="container flex max-w-80 bg-white gap-2 py-4 px-4 lg:px-2 lg:gap-6 md:px-2 md:gap-6">
-                <div class="container max-w-6 flex items-center">
-                    <div class="border-2 border-indigo-600" style="width: 15px; height: 15px; border-radius: 50%;">
-                    </div>
-                </div>
-                <div class="container">
-                    <p class="flex justify-around md:justify-start md:items-baseline md:gap-8">
-                        <span class="font-bold">PayTM</span> <img src="Media/images/paytm.svg" alt="">
-                    </p>
-                </div>
-            </div>
-
-            <div class="container flex max-w-80 bg-white gap-2 py-4 px-4 lg:px-2 lg:gap-6 md:px-2 md:gap-6">
-                <div class="container max-w-6 flex items-center">
-                    <div class="border-2 border-indigo-600" style="width: 15px; height: 15px; border-radius: 50%;">
-                    </div>
-                </div>
-                <div class="container">
-                    <p class="flex justify-around items-center md:justify-start md:items-baseline md:gap-8">
-                        <span class="font-bold">Net Banking</span> <img class="" src="Media/images/net.svg" alt="">
-                    </p>
-                </div>
-            </div>
-
-            <div class="container flex max-w-80 bg-white gap-2 py-4 px-4 lg:px-2 lg:gap-6 md:px-2 md:gap-6">
-                <div class="container max-w-6 flex items-center">
-                    <div class="border-2 border-indigo-600" style="width: 15px; height: 15px; border-radius: 50%;">
-                    </div>
-                </div>
-                <div class="container">
-                    <p class="flex justify-around items-center md:justify-start md:items-baseline md:gap-8">
-                        <span class="font-bold">Coingate</span> <img src="Media/images/coingate.svg" alt="">
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-white lg:scale-100 lg:max-w-2xl md:scale-100 md:max-w-96 min-[425px]: max-[768px]: min-[425px]:max-w-96 max-[767px]:max-w-96 min-[425px]:scale-100 max-[768px]:scale-100 min-[425px]:ml-2 max-[768px]:ml-2 min-[375px]:max-w-80 max-[424px]:max-w-80 min-[375px]:ml-4 max-[424px]:ml-4 min-[320px]:max-w-80 max-[374px]:max-w-80 min-[320px]:scale-90 max-[374px]:scale-90 min-[320px]:-ml-3 max-[374px]:-ml-3  min-[320px]:-my-3 max-[374px]:-my-3"
-            style="width: 200%;">
-            <div class="container flex justify-between px-5 py-5">
-                <div class="container flex">
-                    <p class="font-bold text-lg md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">Premium
-                        Web Hosting - <span class="md:text-sm lg:text-lg" id="result10"></span></p>
-                </div>
-                <div
-                    class="container flex items-end justify-end text-lg gap-3 lg:text-lg min-[425px]:text-sm max-[768px]:text-sm">
-                    <span id="result1"
-                        class="line-through font-medium text-gray-400 lg:text-lg md:text-sm min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"></span>
-                    <span class="font-bold md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"
-                        id="result2"></span>
-                </div>
-            </div>
-            <div class="container flex justify-between px-5 text-lg lg:text-lg min-[425px]:text-sm max-[768px]:text-sm">
-                <div class="container flex">
-                    <img src="Media/images/check.png"
-                        class="img_check md:scale-75 min-[425px]:scale-75 max-[767px]:scale-75 lg:text-lg" alt=""
-                        width="20px">
-                    <p class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs" id="result11"></p>
-                </div>
-                <div class="container flex justify-end gap-3">
-                    <p id="result16"
-                        class="line-through md:text-sm lg:text-lg font-medium text-gray-400 min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    </p>
-                    <p id="result4" class="font-bold md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"></p>
-                </div>
-            </div>
-            <div class="container flex justify-between px-5 text-lg lg:text-lg min-[425px]:text-sm max-[768px]:text-sm">
-                <div class="container flex">
-                    <img src="Media/images/check.png"
-                        class="img_check md:scale-75 min-[425px]:scale-75 max-[767px]:scale-75" alt="" width="20px">
-                    <p id="result12" class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"></p>
-                </div>
-                <div class="container flex justify-end gap-3">
-                    <p id="result3"
-                        class="line-through font-medium lg:text-lg md:text-sm text-gray-400 min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    </p>
-                    <p id="result14" class="font-bold lg:text-lg md:text-sm min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    </p>
-                </div>
-            </div>
-            <div class="container flex justify-between px-5 text-lg lg:text-lg min-[425px]:text-sm max-[768px]:text-sm">
-                <div class="container flex">
-                    <img src="Media/images/check.png"
-                        class="img_check md:scale-75 min-[425px]:scale-75 max-[767px]:scale-75" alt="" width="20px">
-                    <p id="result13"
-                        class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[425px]:text-nowrap max-[768px]:text-nowrap min-[320px]:text-xs max-[376px]:text-xs">
-                    </p>
-                </div>
-                <div class="container flex justify-end gap-3">
-                    <p id="result15" class="font-bold md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    </p>
-                </div>
-            </div>
-            <div
-                class="container flex gap-3 px-6 py-2 lg:gap-6 lg:flex-row md:flex-col min-[320px]:flex-col max-[767px]:flex-col min-[425px]:text-sm max-[768px]:text-sm">
-                <input
-                    class="lg:w-72 px-20 py-2 rounded-md border-solid border-2 border-gray-200 lg:text-lg md:text-sm min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"
-                    type="text" name="" id="" placeholder="First Name">
-                <input
-                    class="lg:w-72 px-20 py-2 rounded-md border-solid border-2 border-gray-200 lg:text-lg md:text-sm min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"
-                    type="text" name="" id="" placeholder="Last Name">
-            </div>
-            <div
-                class="container flex gap-3 lg:gap-6 px-6 py-2 lg:flex-row md:flex-col min-[320px]:flex-col max-[767px]:flex-col min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                <select name="" id=""
-                    class="py-2 lg:w-72 rounded-md border-solid border-2 border-gray-200 md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    <option value="" class="">+91 (India)</option>
+            <div class="container flex">
+                <select name="" id="" class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
+                    <option value="" class="">1 Month</option>
+                    <option value="" class="">12 Months</option>
+                    <option value="" class="">24 Months</option>
+                    <option value="" class="">48 Months</option>
                 </select>
-                <input
-                    class="px-20 lg:w-72 py-2 rounded-md border-solid border-2 border-gray-200 md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"
-                    type="text" name="" id="" placeholder="00000000">
-            </div>
-            <div
-                class="container flex gap-3 px-6  lg:gap-6 py-2 lg:flex-row md:flex-col min-[320px]:flex-col max-[767px]:flex-col min-[425px]:text-sm max-[768px]:text-sm">
-                <select name="" id="" style="padding-left:137px ; padding-right: 137px;"
-                    class="py-2 lg:w-72 rounded-md border-solid border-2 border-gray-200 md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    <option selected value="State" class="">State</option>
-                    <option value="">Assam</option>
-                    <option value="">Bihar</option>
-                    <option value="">Delhi</option>
-                    <option value="">Goa</option>
-                </select>
-
-                <input
-                    class="px-20 py-2 lg:w-72 rounded-md border-solid border-2 border-gray-200 md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"
-                    type="text" name="" id="" placeholder="Password">
-            </div>
-
-            <div
-                class="container flex gap-3 px-6  lg:gap-6 py-2 lg:flex-row md:flex-col min-[320px]:flex-col max-[767px]:flex-col min-[425px]:text-sm max-[768px]:text-sm">
-                <input
-                    class="px-20 py-2 lg:w-72 rounded-md border-solid border-2 border-gray-200 md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"
-                    type="text" name="" id="" placeholder="Street Address">
-                <input
-                    class="px-20 py-2 lg:w-72 rounded-md border-solid border-2 border-gray-200 md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"
-                    type="text" name="" id="" placeholder="Zip Code">
-            </div>
-
-            <div class="container flex gap-3 px-6 py-2 min-[425px]:text-sm max-[768px]:text-sm">
-                <div class="container flex text-lg lg:text-lg">
-                    <p class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs" id="result17"></p>
-                    <p class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs" id="result5"></p>
-                </div>
-                <div class="container flex text-lg justify-end lg:text-lg">
-                    <p class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">-</p>
-                    <p id="result6"
-                        class="font-medium lg:text-lg md:text-sm text-green-500 min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    </p>
+                <button class="text-nowrap 2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Save ₹10,080.00</button>
+                <div class="container">
+                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">₹599.00 / month</p>
+                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">₹599.00 / month</p>
                 </div>
             </div>
-
-            <div class="container flex gap-3 px-6 py-2 justify-between min-[425px]:text-sm max-[768px]:text-sm">
-                <p class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">Taxes & fees</p>
-                <p id="result7" class="font-medium lg:text-lg md:text-sm min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"></p>
-            </div>
-
-            <div class="container flex gap-3 px-6 py-2 min-[425px]:text-sm max-[768px]:text-sm">
-                <div class="container flex text-lg font-bold">
-                    <p class="lg:text-2xl md:text-sm min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">Total</p>
+            <div class="container">
+                <div class="container">
+                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Renews at ₹599.00/month on 08/11/2024. Cancel anytime!</p>
                 </div>
-                <div class="container flex text-lg lg:text-lg justify-end gap-2">
-                    <p id="result8"
-                        class="line-through lg:text-lg md:text-sm font-medium text-gray-400 min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    </p>
-                    <p id="result9" class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs"></p>
+                <div class="container">
+                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Opt for a 12-month plan to get a FREE domain - with no setup fees.</p>
                 </div>
-            </div>
-
-            <div class="container flex gap-3 px-6 py-2 justify-between min-[425px]:text-sm max-[768px]:text-sm">
-                <p
-                    class="font-medium hover:underline hover:cursor-pointer md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">
-                    Have a coupon code?</p>
-            </div>
-
-
-            <div
-                class="container flex gap-3 px-6 py-2 lg:flex-row min-[425px]:text-sm max-[768px]:text-sm min-[320px]:flex-col-reverse max-[768px]:flex-col-reverse">
-                <div class="container flex font-bold">
-                    <button
-                        class="border-solid border-2 border-indigo-600 text-indigo-600 font-bold rounded-lg py-1 px-20 bg-violet-700 text-white hover:bg-violet-900 lg:text-lg md:text-sm lg:px-4 md:px-1 md:py-3 md:text-center min-[425px]:text-sm max-[768px]:text-sm min-[425px]:text-nowrap max-[768px]:text-nowrap min-[425px]:px-1 max-[768px]:px-1 min-[425px]:max-h-12 max-[768px]:max-h-12 min-[320px]:text-xs max-[376px]:text-xs">Submit
-                        Secure Payment</button>
-                </div>
-                <div class="container flex flex-col text-md gap-2">
-                    <div class="container flex items-center gap-2">
-                        <i class="ph ph-clock-counter-clockwise text-lg lg:text-lg"></i>
-                        <p class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">30-day money-back
-                            guarantee</p>
-                    </div>
-                    <div class="container flex items-center gap-2">
-                        <i class="ph ph-lock text-lg lg:text-lg"></i>
-                        <p class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">Encrypted and secure
-                            payments</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container flex gap-3 px-6 py-2 min-[425px]:text-sm max-[768px]:text-sm">
-                <p class="md:text-sm lg:text-lg min-[425px]:text-sm max-[768px]:text-sm min-[320px]:text-xs max-[376px]:text-xs">By checking out you agree with
-                    our Terms of Service and confirm that you have read our Privacy
-                    Policy. You can cancel recurring payments at any time.</p>
             </div>
         </div>
+        <!-- second container -->
+        <div class="container flex flex-col rounded-md 2xl:max-w-2xl xl:max-w-md shadow-lg shadow-zinc-800">
+            <div class="container bg-white flex flex-col">
+                <div class="container flex">
+                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Subtotal</p>
+                    <p>
+                        <span class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">₹14,376.00</span>
+                        <span class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">₹4,296.00</span>
+                    </p>
+                </div>
+                <div class="container flex">
+                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Plan discount -70%</p>
+                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">-₹10,080.00</p>
+                </div>
+                <div class="container">
+                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Have a coupon code?</p>
+                </div>
+                <button class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Continue</button>
+            </div>
+            <div class="container">
+                <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">30-day money-back guarantee</p>
+            </div>
+
+        </div>
+
     </div>
 
 
 
-    <!-- 7 end -->
-    <div
-        class="container flex justify-center lg:max-w-5xl lg:gap-16 py-16 gap-6 md:gap-16 md:px-96 text-sm font-medium text-gray-400 md:py-6 min-[425px]:py-8 max-[768px]:py-8 min-[425px]:gap-10 max-[768px]:gap-10 min-[425px]:px-52 max-[768px]:px-52 min-[375px]:gap-10 max-[424px]:gap-10 min-[320px]:max-w-80 max-[375px]:max-w-80 min-[320px]:gap-1 max-[375px]:gap-1">
-        <p class="lg:text-lg md:text-md min-[320px]:text-nowrap max-[424px]:text-nowrap min-[320px]:text-xs max-[424px]:text-xs">
+
+    <!-- cart end -->
+    <!-- footer start -->
+    <div class="container mx-auto flex gap-5 items-center justify-center">
+        <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
             © 2004-2024 hostinger.in
         </p>
-        <p class="lg:text-lg md:text-md min-[320px]:text-nowrap max-[424px]:text-nowrap min-[320px]:text-xs max-[424px]:text-xs">
+        <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
             Terms of service
         </p>
-        <p class="lg:text-lg md:text-md min-[320px]:text-nowrap max-[424px]:text-nowrap min-[320px]:text-xs max-[424px]:text-xs">
+        <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
             Privacy policy
         </p>
-
     </div>
+    <!-- footer end -->
 
 
 
 
 
-    <script src="script.js"></script>
+
+
+
+
+
+
+    <!-- <div
+        class="flex grid grid-flow-row-dense grid-cols-3 grid-rows-3 container mx-auto bg-indigo-600 opacity-65 rounded-md text-white">
+        <div class="col-span-2">
+            <p>
+                🔥 Limited-time deal:
+            </p>
+
+            <p>
+                don’t miss big discounts + 2 extra months FREE with a 48 month plan
+            </p>
+        </div>
+        <div class="flex flex-col">
+            <span>Deal ends in</span> <span>14:59:58:57</span>
+        </div>
+    </div> -->
 </body>
 
 </html>
