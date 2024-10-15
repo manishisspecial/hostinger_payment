@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title> Cart | Hostinger</title>
+    <!-- <title> Cart | Hostinger</title> -->
+    <title>Hostinger | Everything you need to create a website.</title>
 </head>
 
 <body>
 
-    <!-- component -->
-    <nav class=" bg-white w-full flex relative justify-between items-center mx-auto px-8 h-20">
+    <!-- navbar -->
+    <nav class=" bg-white w-full flex relative justify-between items-center mx-auto h-20">
         <!-- logo -->
-        <div class="inline-flex">
-            <a class="_o6689fn" href="/">
+        <div class="inline-flex px-8">
+            <a class="_o6689fn" href="index.html">
                 <div class="hidden md:block">
                     <img src="assets/media/images/hostinger-black.svg" alt="">
                 </div>
@@ -32,8 +33,15 @@
         <div class="flex-initial">
             <div class="flex justify-end items-center relative">
                 <div class="flex mr-4 items-center">
-                    <a class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full" href="#">
-                        <div class="flex items-center relative cursor-pointer whitespace-nowrap">Login</div>
+                    <a class="inline-block py-2 px-3 rounded-full flex gap-3" href="#">
+                        <button
+                            class="flex items-center justify-center border-2 hover:border-blue-600 rounded-xl md:py-2.5 py-1 px-4 transition duration-300">
+                            Login
+                        </button>
+                        <button
+                            class="flex items-center justify-center border-2 hover:border-blue-600 rounded-xl md:py-2.5 py-1 px-4 transition duration-300">
+                            Money
+                        </button>
                     </a>
                 </div>
             </div>
@@ -41,138 +49,209 @@
         <!-- end login -->
     </nav>
 
-    <!-- Limited time deal start -->
+   
+    <!-- Plans -->
 
-    <div class="container mx-auto bg-indigo-600 opacity-65 rounded-md text-white flex justify-between p-16">
-        <div class="flex flex-col gap-5">
-            <p
-                class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-                🔥 Limited-time deal:
-            </p>
+    <div class="w-full max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Pick your perfect plan</h2>
+        <h2 class="text-2xl font-bold text-center mb-8">Get started in complete confidence. Our 30-day money-back
+            guarantee means it's risk-free.</h2>
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Basic Plan -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col flex-1">
+                <h3 class="text-xl font-semibold mb-4">Single</h3>
+                <p class="text-gray-600 mb-4">A great solution for beginners</p>
+                <p class="text-4xl font-bold mb-6">₹69.00<span class="text-xl font-normal text-gray-600">/month</span>
+                </p>
+                <ul class="mb-6 flex-grow">
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        1 website
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        50 GB SSD storage
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        1 email account
+                    </li>
+                </ul>
+                <a href="cart.html"
+                    class="bg-blue-600 text-center  text-white rounded-md py-2 px-4 hover:bg-blue-700 transition duration-300">Choose
+                    Plan</a>
+            </div>
 
-            <p class="2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-                don’t miss big discounts + 2 extra months FREE with a 48 month plan
-            </p>
-        </div>
-        <div class="flex flex-col bg-blue-800 px-10 py-6 rounded-md gap-2">
-            <p
-                class="text-center 2xl:text-3xl xl:text-2xl lg:text-xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-                Deal ends in
-            </p>
-            <p
-                class="2xl:text-3xl xl:text-2xl lg:text-xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-                14&nbsp;:&nbsp;&nbsp;59&nbsp;:&nbsp;58&nbsp;:&nbsp;57
-            </p>
+            <!-- Pro Plan -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col flex-1 border-2 border-blue-600">
+                <h3 class="text-xl font-semibold mb-4">Premium</h3>
+                <p class="text-gray-600 mb-4">Everything you need to create your website.</p>
+                <p class="text-4xl font-bold mb-6">₹149.00<span class="text-xl font-normal text-gray-600">/month</span>
+                </p>
+                <ul class="mb-6 flex-grow">
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        100 websites
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        100 GB SSD storage
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Free email
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Unlimited free SSL
+                    </li>
+                </ul>
+                <a href="cart.html"
+                class="bg-blue-600 text-center  text-white rounded-md py-2 px-4 hover:bg-blue-700 transition duration-300">Choose
+                Plan</a>
+                </div>
+
+            <!-- Enterprise Plan -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col flex-1">
+                <h3 class="text-xl font-semibold mb-4">Business</h3>
+                <p class="text-gray-600 mb-4">Level up with more power and enhanced features.</p>
+                <p class="text-4xl font-bold mb-6">₹249.00<span class="text-xl font-normal text-gray-600">/month</span>
+                </p>
+                <ul class="mb-6 flex-grow">
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        100 websites
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        200 GB SSD storage
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Free email
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Unlimited free SSL
+                    </li>
+                </ul>
+                <a href="cart.html"
+                class="bg-blue-600 text-center  text-white rounded-md py-2 px-4 hover:bg-blue-700 transition duration-300">Choose
+                Plan</a>
+                </div>
+            <!-- Enterprise Plan -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col flex-1">
+                <h3 class="text-xl font-semibold mb-4">Cloud Startup</h3>
+                <p class="text-gray-600 mb-4">Enjoy optimised performance & guaranteed resources.</p>
+                <p class="text-4xl font-bold mb-6">₹699.00<span class="text-xl font-normal text-gray-600">/month</span>
+                </p>
+                <ul class="mb-6 flex-grow">
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        100 websites
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        200 GB SSD storage
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Free email
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        Unlimited free SSL
+                    </li>
+                </ul>
+                <a href="cart.html"
+                class="bg-blue-600 text-center text-white rounded-md py-2 px-4 hover:bg-blue-700 transition duration-300">Choose
+                Plan</a>
+                </div>
         </div>
     </div>
 
-    <!-- Limited time deal end -->
 
-    <!-- cart start -->
-    <div class="container mx-auto py-6">
-        <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-            Your Cart
-        </p>
-    </div>
 
-    <div class="container mx-auto py-6 flex gap-6 px-10">
-        <!-- first container -->
-        <div class="container bg-white flex flex-col rounded-md shadow-lg shadow-zinc-800">
-            <div class="container">
-                <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Premium Web Hosting</p>
-            </div>
-            <div class="container flex">
-                <select name="" id="" class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-                    <option value="" class="">1 Month</option>
-                    <option value="" class="">12 Months</option>
-                    <option value="" class="">24 Months</option>
-                    <option value="" class="">48 Months</option>
-                </select>
-                <button class="text-nowrap 2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Save ₹10,080.00</button>
-                <div class="container">
-                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">₹599.00 / month</p>
-                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">₹599.00 / month</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="container">
-                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Renews at ₹599.00/month on 08/11/2024. Cancel anytime!</p>
-                </div>
-                <div class="container">
-                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Opt for a 12-month plan to get a FREE domain - with no setup fees.</p>
+
+
+
+<!-- footer -->
+
+    <footer class="relative bg-blueGray-200 pt-8 pb-4">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-1/2 md:w-full px-4 mx-auto text-center">
+                    <div class="text-md text-blueGray-500 font-semibold py-1">
+                        <span id="get-current-year">© 2004-2024 hostinger.in</span>
+                        <a href="" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Terms of service</a>
+                        <a href="" class="text-blueGray-500 hover:text-blueGray-800">Privacy policy</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- second container -->
-        <div class="container flex flex-col rounded-md 2xl:max-w-2xl xl:max-w-md shadow-lg shadow-zinc-800">
-            <div class="container bg-white flex flex-col">
-                <div class="container flex">
-                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Subtotal</p>
-                    <p>
-                        <span class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">₹14,376.00</span>
-                        <span class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">₹4,296.00</span>
-                    </p>
-                </div>
-                <div class="container flex">
-                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Plan discount -70%</p>
-                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">-₹10,080.00</p>
-                </div>
-                <div class="container">
-                    <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Have a coupon code?</p>
-                </div>
-                <button class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">Continue</button>
-            </div>
-            <div class="container">
-                <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">30-day money-back guarantee</p>
-            </div>
-
-        </div>
-
-    </div>
+    </footer>
 
 
-
-
-    <!-- cart end -->
-    <!-- footer start -->
-    <div class="container mx-auto flex gap-5 items-center justify-center">
-        <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-            © 2004-2024 hostinger.in
-        </p>
-        <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-            Terms of service
-        </p>
-        <p class="2xl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl min-[320px]:text-lg max-[600px]:text-lg font-bold">
-            Privacy policy
-        </p>
-    </div>
-    <!-- footer end -->
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div
-        class="flex grid grid-flow-row-dense grid-cols-3 grid-rows-3 container mx-auto bg-indigo-600 opacity-65 rounded-md text-white">
-        <div class="col-span-2">
-            <p>
-                🔥 Limited-time deal:
-            </p>
-
-            <p>
-                don’t miss big discounts + 2 extra months FREE with a 48 month plan
-            </p>
-        </div>
-        <div class="flex flex-col">
-            <span>Deal ends in</span> <span>14:59:58:57</span>
-        </div>
-    </div> -->
 </body>
 
 </html>
