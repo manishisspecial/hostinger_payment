@@ -1,8 +1,44 @@
 function Premium() {
-    var CurrencySelector = document.getElementById('premium_option').value;
-    if (CurrencySelector === '1_month') {
-        document.getElementById('result1').value = 599.00;
-        document.getElementById('result4').value = 599.00;
+    var PremiumSelector = document.getElementById('premium_option').value;
+    if (PremiumSelector === '1_month') {
+
+        var CurrencySelector = document.getElementById('converter').value;
+        if (CurrencySelector === 'INR') {
+            console.log("R");
+            var text1 = 599.00;
+            var text4 = 599.00;
+            var text8 = 599.00;
+            document.getElementById('result1').innerHTML = "₹ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result4').innerHTML = "₹ " + text4.toFixed(2);
+            document.getElementById('renewal_111').innerHTML = "₹ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Euro') {
+            console.log("E");
+            var text1 = 599.00 * 0.011;
+            var text4 = 599.00 * 0.011;
+            var text8 = 599.00 * 0.011;
+            document.getElementById('result1').innerHTML = "€" + text1.toFixed(2) + "/ Month";
+            document.getElementById('result4').innerHTML = "€ " + text4.toFixed(2);
+            document.getElementById('renewal_111').innerHTML = "€" + text8.toFixed(2) + "/ Month";
+        }
+        else if (CurrencySelector === 'Dollar') {
+            console.log("D");
+            var text1 = 599.00 * 0.012;
+            var text4 = 599.00 * 0.012;
+            var text8 = 599.00 * 0.012;
+            document.getElementById('result1').innerHTML = "$" + text1.toFixed(2) + "/ Month";
+            document.getElementById('result4').innerHTML = "$ " + text4.toFixed(2);
+            document.getElementById('renewal_111').innerHTML = "$" + text8.toFixed(2) + "/ Month";
+        }
+        else if (CurrencySelector === 'Pounds') {
+            console.log("P");
+            var text1 = 599.00 * 0.0092;
+            var text4 = 599.00 * 0.0092;
+            var text8 = 599.00 * 0.0092;
+            document.getElementById('result1').innerHTML = "£" + text1.toFixed(2) + "/ Month";
+            document.getElementById('result4').innerHTML = "£ " + text4.toFixed(2);
+            document.getElementById('renewal_111').innerHTML = "£" + text8.toFixed(2) + "/ Month";
+        }
         var element1 = document.getElementsByClassName("saving_1")[0];
         var element2 = document.getElementsByClassName("saving_2")[0];
         var element3 = document.getElementsByClassName("renewal_1")[0];
@@ -28,12 +64,83 @@ function Premium() {
         element11.style.display = "none";
         element12.style.display = "none";
     }
-    else if (CurrencySelector === '12_months') {
-        document.getElementById('result1').value = 219.00;
-        document.getElementById('result4').value = 2628.00;
-        document.getElementById('result5').value = 7188.00;
-        document.getElementById('result6').value = 63;
-        document.getElementById('result7').value = 4560.00;
+    else if (PremiumSelector === '12_months') {
+        var CurrencySelector = document.getElementById('converter').value;
+        if (CurrencySelector === 'INR') {
+            console.log("R");
+            var text1 = 219.00;
+            var text2 = 599.00;
+            var text3 = 4560.00;
+            var text4 = 2628.00;
+            var text5 = 7188.00;
+            var text6 = 63;
+            var text7 = 4560.00;
+            var text8 = 379.00;
+            document.getElementById('result1').innerHTML = "₹ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "₹ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "₹ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "₹ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "₹ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "₹ " + text7.toFixed(2);
+        }
+        else if (CurrencySelector === 'Euro') {
+            console.log("E");
+            var text1 = 219.00 * 0.011;
+            var text2 = 599.00 * 0.011;
+            var text3 = 4560.00 * 0.011;
+            var text4 = 2628.00 * 0.011;
+            var text5 = 7188.00 * 0.011;
+            var text6 = 63;
+            var text7 = 4560.00 * 0.011;
+            var text8 = 379.00 * 0.011;
+            document.getElementById('result1').innerHTML = "€ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "€ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "€ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "€ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "€ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "€ " + text7.toFixed(2);
+            document.getElementById('renewal_222').innerHTML = "€ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Dollar') {
+            console.log("D");
+            var text1 = 219.00 * 0.012;
+            var text2 = 599.00 * 0.012;
+            var text3 = 4560.00 * 0.012;
+            var text4 = 2628.00 * 0.012;
+            var text5 = 7188.00 * 0.012;
+            var text6 = 63;
+            var text7 = 4560.00 * 0.012;
+            var text8 = 379.00 * 0.012;
+            document.getElementById('result1').innerHTML = "$ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "$ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "$ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "$ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "$ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "$ " + text7.toFixed(2);
+            document.getElementById('renewal_222').innerHTML = "$ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Pounds') {
+            console.log("P");
+            var text1 = 219.00 * 0.092;
+            var text2 = 599.00 * 0.092;
+            var text3 = 4560.00 * 0.092;
+            var text4 = 2628.00 * 0.092;
+            var text5 = 7188.00 * 0.092;
+            var text6 = 63;
+            var text7 = 4560.00 * 0.092;
+            var text8 = 379.00 * 0.092;
+            document.getElementById('result1').innerHTML = "£ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "£ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "£ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "£ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "£ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "£ " + text7.toFixed(2);
+            document.getElementById('renewal_222').innerHTML = "£ " + text8.toFixed(2) + " / Month";
+        }
         var element1 = document.getElementsByClassName("saving_1")[0];
         var element2 = document.getElementsByClassName("saving_2")[0];
         var element3 = document.getElementsByClassName("renewal_1")[0];
@@ -58,15 +165,86 @@ function Premium() {
         element10.style.display = "none";
         element11.style.display = "flex";
         element12.style.display = "block";
-        document.getElementById('result2').value = 599.00;
-        document.getElementById('result3').value = 4560.00;
     }
-    else if (CurrencySelector === '24_months') {
-        document.getElementById('result1').value = 179.00;
-        document.getElementById('result5').value = 14376.00;
-        document.getElementById('result4').value = 4296.00;
-        document.getElementById('result6').value = 70;
-        document.getElementById('result7').value = 10080.00;
+    else if (PremiumSelector === '24_months') {
+        var CurrencySelector = document.getElementById('converter').value;
+        if (CurrencySelector === 'INR') {
+            console.log("R");
+            var text1 = 179.00;
+            var text2 = 599.00;
+            var text3 = 10080.00;
+            var text4 = 4296.00;
+            var text5 = 14376.00;
+            var text6 = 70;
+            var text7 = 10080.00;
+            var text8 = 339.00;
+            document.getElementById('result1').innerHTML = "₹ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "₹ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "₹ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "₹ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "₹ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "₹ " + text7.toFixed(2);
+            document.getElementById('renewal_333').innerHTML = "₹ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Euro') {
+            console.log("E");
+            var text1 = 179.00 * 0.011;
+            var text2 = 599.00 * 0.011;
+            var text3 = 10080.00 * 0.011;
+            var text4 = 4296.00 * 0.011;
+            var text5 = 14376.00 * 0.011;
+            var text6 = 70;
+            var text7 = 10080.00 * 0.011;
+            var text8 = 339.00;
+            document.getElementById('result1').innerHTML = "€ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "€ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "€ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "€ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "€ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "€ " + text7.toFixed(2);
+            document.getElementById('renewal_333').innerHTML = "€ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Dollar') {
+            console.log("D");
+            var text1 = 179.00 * 0.012;
+            var text2 = 599.00 * 0.012;
+            var text3 = 10080.00 * 0.012;
+            var text4 = 4296.00 * 0.012;
+            var text5 = 14376.00 * 0.012;
+            var text6 = 70;
+            var text7 = 10080.00 * 0.012;
+            var text8 = 339.00;
+            document.getElementById('result1').innerHTML = "$ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "$ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "$ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "$ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "$ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "$ " + text7.toFixed(2);
+            document.getElementById('renewal_333').innerHTML = "$ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Pounds') {
+            console.log("P");
+            var text1 = 179.00 * 0.092;
+            var text2 = 599.00 * 0.092;
+            var text3 = 10080.00 * 0.092;
+            var text4 = 4296.00 * 0.092;
+            var text5 = 14376.00 * 0.092;
+            var text6 = 70;
+            var text7 = 10080.00 * 0.092;
+            var text8 = 339.00;
+            document.getElementById('result1').innerHTML = "£ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "£ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "£ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "£ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "£ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "£ " + text7.toFixed(2);
+            document.getElementById('renewal_333').innerHTML = "£ " + text8.toFixed(2) + " / Month";
+        }
+
         var element1 = document.getElementsByClassName("saving_1")[0];
         var element2 = document.getElementsByClassName("saving_2")[0];
         var element3 = document.getElementsByClassName("renewal_1")[0];
@@ -91,15 +269,89 @@ function Premium() {
         element10.style.display = "none";
         element11.style.display = "flex";
         element12.style.display = "block";
-        document.getElementById('result2').value = 599.00;
-        document.getElementById('result3').value = 10080.00;
+
     }
-    else if (CurrencySelector === '48_months') {
-        document.getElementById('result1').value = 149.00;
-        document.getElementById('result5').value = 28752.00;
-        document.getElementById('result4').value = 7152.00;
-        document.getElementById('result6').value = 75;
-        document.getElementById('result7').value = 21600.00;
+    else if (PremiumSelector === '48_months') {
+
+
+        var CurrencySelector = document.getElementById('converter').value;
+        if (CurrencySelector === 'INR') {
+            console.log("R");
+            var text1 = 149.00;
+            var text2 = 599.00;
+            var text3 = 21600.00;
+            var text4 = 7152.00;
+            var text5 = 28752.00;
+            var text6 = 75;
+            var text7 = 21600.00;
+            var text8 = 249.00;
+            document.getElementById('result1').innerHTML = "₹ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "₹ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "₹ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "₹ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "₹ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "₹ " + text7.toFixed(2);
+            document.getElementById('renewal_444').innerHTML = "₹ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Euro') {
+            console.log("E");
+            var text1 = 149.00 * 0.011;
+            var text2 = 599.00 * 0.011;
+            var text3 = 21600.00 * 0.011;
+            var text4 = 7152.00 * 0.011;
+            var text5 = 28752.00 * 0.011;
+            var text6 = 75;
+            var text7 = 21600.00 * 0.011;
+            var text8 = 249.00 * 0.011;
+            document.getElementById('result1').innerHTML = "€ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "€ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "€ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "€ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "€ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "€ " + text7.toFixed(2);
+            document.getElementById('renewal_444').innerHTML = "€ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Dollar') {
+            console.log("D");
+            var text1 = 149.00 * 0.012;
+            var text2 = 599.00 * 0.012;
+            var text3 = 21600.00 * 0.012;
+            var text4 = 7152.00 * 0.012;
+            var text5 = 28752.00 * 0.012;
+            var text6 = 75;
+            var text7 = 21600.00 * 0.012;
+            var text8 = 249.00 * 0.012;
+            document.getElementById('result1').innerHTML = "$ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "$ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "$ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "$ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "$ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "$ " + text7.toFixed(2);
+            document.getElementById('renewal_444').innerHTML = "$ " + text8.toFixed(2) + " / Month";
+        }
+        else if (CurrencySelector === 'Pounds') {
+            console.log("P");
+            var text1 = 149.00 * 0.092;
+            var text2 = 599.00 * 0.092;
+            var text3 = 21600.00 * 0.092;
+            var text4 = 7152.00 * 0.092;
+            var text5 = 28752.00 * 0.092;
+            var text6 = 75;
+            var text7 = 21600.00 * 0.092;
+            var text8 = 249.00 * 0.092;
+            document.getElementById('result1').innerHTML = "£ " + text1.toFixed(2) + " / Month";
+            document.getElementById('result2').innerHTML = "£ " + text2.toFixed(2) + " / Month";
+            document.getElementById('result3').innerHTML = "Save " + "£ " + text3.toFixed(2);
+            document.getElementById('result4').innerHTML = "£ " + text4.toFixed(2);
+            document.getElementById('result5').innerHTML = "£ " + text5.toFixed(2);
+            document.getElementById('result6').innerHTML = text6 + " %";
+            document.getElementById('result7').innerHTML = "£ " + text7.toFixed(2);
+            document.getElementById('renewal_444').innerHTML = "£ " + text8.toFixed(2) + " / Month";
+        }
+   
         var element1 = document.getElementsByClassName("saving_1")[0];
         var element2 = document.getElementsByClassName("saving_2")[0];
         var element3 = document.getElementsByClassName("renewal_1")[0];
@@ -124,8 +376,9 @@ function Premium() {
         element10.style.display = "block";
         element11.style.display = "flex";
         element12.style.display = "block";
-        document.getElementById('result2').value = 599.00;
-        document.getElementById('result3').value = 21600.00;
+
     }
 
 }
+
+    
