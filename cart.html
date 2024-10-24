@@ -97,50 +97,51 @@
                     <div class="flex justify-between mb-4 items-start">
                         <div class="font-bold">Premium Web Hosting</div>
                     </div>
-                    <div class="flex justify-between mb-4 items-start">
-                        <select name="" class="px-20 text-base" id="premium_option" onchange="Premium()">
-                            <option value="1_month" class="text-sm">1 Month</option>
-                            <option value="12_months" class="text-sm">12 Months</option>
-                            <option value="24_months" class="text-sm">24 Months</option>
-                            <option value="48_months" class="text-sm" selected>48 Months</option>
-                        </select>
-                        <div class="font-medium saving_2">
-                            <p id="result3">Save ₹ 21600.00</p>
-                            <!-- <input class="max-w-28" type="number" id="result3" value="21600.00"> -->
+                    <div class="flex justify-between mb-4 items-start flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row">
+                        <div class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
+                            <select name="" class="px-20 text-base" id="premium_option" onchange="Premium()">
+                                <option value="1_month" class="text-sm">1 Month</option>
+                                <option value="12_months" class="text-sm">12 Months</option>
+                                <option value="24_months" class="text-sm">24 Months</option>
+                                <option value="48_months" class="text-sm" selected>48 Months</option>
+                            </select>
                         </div>
-                        <div class="flex justify-between mb-4 items-start flex-col">
-                            <div class="font-medium">
-                                <p id="result1">₹ 149.00 / month</p>
-                                <!-- ₹ <input class="max-w-24 text-center" type="number" id="result1" value="149.00">per month -->
+                        <div class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl flex gap-1 md:gap-10 lg:gap-3 xl:gap-32 2xl:gap-52">
+                            <div class="font-medium saving_2">
+                                <p id="result3">Save ₹ 21600.00</p>
                             </div>
-                            <div class="font-medium saving_1">
-                                <p id="result2">₹ 599.00 / month</p>
-                                <!-- ₹ <input class="max-w-24 text-center" type="number" id="result2" value="599.00">per month -->
+                            <div class="flex justify-between mb-4 items-start flex-col">
+                                <div class="font-medium">
+                                    <p id="result1">₹ 149.00 / month</p>
+                                </div>
+                                <div class="font-medium saving_1">
+                                    <p id="result2">₹ 599.00 / month</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hidden text-lg text-gray-400 renewal_1">Renews at <span id="renewal_111">₹599.00/month</span> on 22/11/2024. Cancel anytime!</div>
+                    <div class="hidden text-lg text-gray-400 renewal_1 text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Renews at <span id="renewal_111">₹599.00/month</span> on 22/11/2024. Cancel anytime!</div>
                     <div class="hidden text-lg text-gray-400 renewal_2">Renews at <span id="renewal_222">₹379.00/month</span> on 22/10/2025. Cancel anytime!</div>
-                    <div class="hidden text-lg text-gray-400 renewal_3">Renews at <span id="renewal_333">₹339.00/month</span> on 22/10/2026. Cancel anytime!</div>
-                    <div class="font-medium text-lg text-gray-400 renewal_4">Renews at <span id="renewal_444">₹249.00/month</span> on 22/10/2028. Cancel anytime!</div>
-                    <div class="hidden text-lg py-2 px-8 bg-green-300 opacity-50 renewal_11">Opt for a 12-month plan to get a FREE domain for 1 year - with no setup fees.</div>
-                    <div class="hidden text-lg py-2 px-8 bg-green-300 opacity-50 renewal_22">Great news! You get a FREE domain for 1 year with this order.</div>
-                    <div class="hidden text-lg py-2 px-8 bg-green-300 opacity-50 renewal_33">Great news! You get a FREE domain for 1 year with this order.</div>
-                    <div class="font-medium text-lg py-2 px-8 bg-green-300 opacity-50 renewal_44">Great news! Your FREE domain + 3 months FREE are included with this order.</div>
+                    <div class="hidden text-lg text-gray-400 renewal_3 text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Renews at <span id="renewal_333">₹339.00/month</span> on 22/10/2026. Cancel anytime!</div>
+                    <div class="font-medium text-lg text-gray-400 renewal_4 text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Renews at <span id="renewal_444">₹249.00/month</span> on 22/10/2028. Cancel anytime!</div>
+                    <div class="hidden text-lg py-2 px-8 bg-green-300 opacity-50 renewal_11 text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Opt for a 12-month plan to get a FREE domain for 1 year - with no setup fees.</div>
+                    <div class="hidden text-lg py-2 px-8 bg-green-300 opacity-50 renewal_22 text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Great news! You get a FREE domain for 1 year with this order.</div>
+                    <div class="hidden text-lg py-2 px-8 bg-green-300 opacity-50 renewal_33 text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Great news! You get a FREE domain for 1 year with this order.</div>
+                    <div class="font-medium text-lg py-2 px-8 bg-green-300 opacity-50 renewal_44 text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">Great news! Your FREE domain + 3 months FREE are included with this order.</div>
                 </div>
                 <div class="shadow-2xl shadow-slate-700 bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
-                    <div class="flex justify-between mb-4 items-start">
+                    <div class="flex justify-between mb-4 items-start text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
                         <div class="font-medium">Subtotal</div>
                         <div class="font-medium subtotal_inner">
                             <p id="result5">₹ 28752.00</p>
                             <!-- ₹ <input class="max-w-28 text-center" id="result5" type="number" value="28752.00"> -->
                         </div>
-                        <div class="font-medium">
+                        <div class="font-medium text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
                             <p id="result4">₹ 7152.00</p>
                             <!-- ₹ <input class="max-w-28 text-center" id="result4" type="number" value="7152.00"> -->
                         </div>
                     </div>
-                    <div class="flex justify-between mb-4 items-start discount_div">
+                    <div class="flex justify-between mb-4 items-start discount_div text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
                         <div class="text-lg">Plan discount -</div>
                         <div class="font-medium">
                             <p id="result6">75 %</p>
@@ -162,7 +163,7 @@
 
     <!-- footer -->
 
-    <footer class="relative bg-blueGray-200 pt-1 pb-2 sm:text-lg text-2xl">
+    <footer class="relative bg-blueGray-200 pt-1 pb-2 sm:text-lg text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap items-center md:justify-between justify-center">
                 <div class="w-1/2 md:w-full px-4 mx-auto text-center">
