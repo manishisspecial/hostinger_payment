@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title> Cart | Hostinger</title>
-    <!-- <title>Hostinger | Everything you need to create a website.</title> -->
 </head>
 
 <body>
@@ -59,7 +59,7 @@
     <!-- section1 start -->
 
     <main class="w-full transition-all mx-auto">
-        <div class="w-[95%] max-w-7xl transition-all rounded-xl opacity-75 text-white bg-indigo-600 mx-auto sm:max-w-[95%] md:max-w-[95%] lg:max-w-[95%] xl:max-w-[79%] 2xl:max-w-[79%]">
+        <div class="w-[95%] max-w-7xl transition-all rounded-xl opacity-75 text-white bg-indigo-600 mx-auto sm:max-w-[95%] md:max-w-[92%] lg:max-w-[95%] xl:max-w-[79%] 2xl:max-w-[79%]">
             <div class="py-1 px-4 xl:text-2xl sm:text-xl">
                 <div class="grid grid-cols-1 lg:grid-cols-3">
                     <div class="shadow-md shadow-black/5 p-6 rounded-md lg:col-span-2">
@@ -84,7 +84,7 @@
     
     <!-- section1 end -->
     
-    <main class="p-10 text-5xl">
+    <main class="px-10 py-3 text-4xl">
         <div class="font-bold mx-auto sm:max-w-[95%] md:max-w-[100%] lg:max-w-[100%] xl:max-w-[83%] 2xl:max-w-[83%]">Your cart</div>
     </main>
 
@@ -98,19 +98,19 @@
                         <div class="font-bold">Premium Web Hosting</div>
                     </div>
                     <div class="flex justify-between mb-4 items-start flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row">
-                        <div class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl xl:-ml-10 lg:-ml-6">
-                            <select name="" class="px-20 text-base md:px-64 md:h-10" id="premium_option" onchange="Premium()">
+                        <div class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl xl:-ml-0 lg:-ml-6">
+                            <select name="" class="px-20 text-base md:px-64 lg:px-16 md:h-10 border border-indigo-600 rounded-md md:mb-4 mb-0" id="premium_option" onchange="Premium()">
                                 <option value="1_month" class="text-sm">1 Month</option>
                                 <option value="12_months" class="text-sm">12 Months</option>
                                 <option value="24_months" class="text-sm">24 Months</option>
                                 <option value="48_months" class="text-sm" selected>48 Months</option>
                             </select>
                         </div>
-                        <div class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl flex gap-1 md:gap-10 md:text-sm lg:gap-3 xl:gap-32 2xl:gap-52 md:justify-center">
-                            <div class="font-medium saving_2 bg-green-300 flex items-center h-10 px-4 rounded-full lg:text-sm lg:font-bold">
+                        <div class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl flex gap-1 md:gap-80 md:text-base lg:gap-3 xl:gap-32 2xl:gap-52">
+                            <div class="font-medium saving_2 bg-green-300 flex items-center h-10 px-4 rounded-full lg:text-sm lg:font-bold md:text-base">
                                 <p id="result3">Save ₹ 21600.00</p>
                             </div>
-                            <div class="flex justify-between mb-4 items-start flex-col xl:-ml-16 lg:-ml-0">
+                            <div class="flex justify-between mb-4 items-start flex-col xl:-ml-16 lg:-ml-0 md:text-base">
                                 <div class="font-medium">
                                     <p id="result1">₹ 149.00 / month</p>
                                 </div>
@@ -129,7 +129,7 @@
                     <div class="hidden text-lg py-2 px-8 bg-green-300 opacity-50 renewal_33 text-base md:text-xl lg:text-sm lg:mb-4 xl:text-base 2xl:text-xl md:text-xs md:mb-1">Great news! You get a FREE domain for 1 year with this order.</div>
                     <div class="font-medium text-lg py-2 px-8 bg-green-300 opacity-50 renewal_44 text-base md:text-xl lg:text-sm lg:mb-4 xl:text-base 2xl:text-xl md:text-xs md:mb-1">Great news! Your FREE domain + 3 months FREE are included with this order.</div>
                 </div>
-                <div class="shadow-2xl shadow-slate-700 bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
+                <div class="shadow-2xl shadow-slate-700 bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md xl:mb-16    lg:mb-16">
                     <div class="flex justify-between mb-4 items-start text-base md:text-xl lg:text-base xl:text-xl 2xl:text-xl">
                         <div class="font-medium">Subtotal</div>
                         <div class="font-medium subtotal_inner">
@@ -153,11 +153,16 @@
                         </div>
                     </div>
                         <div class="text-lg text-blue-500 font-bold">Have a coupon code?</div>
-                        <button class="text-lg">Continue</button>
+                        <button class="bg-indigo-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:py-3 md:px-6 lg:py-2 text-base lg:px-8 transition-all duration-200 xl:mt-4">
+                            Continue
+                          </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-3 h-4 -mt-10 mb-8">
+                        <div class="place-self-end xl:text-xl xl:pr-6 xl:scale-100 lg:text-xl lg:scale-75 hidden lg:block xl:block"><i class="ph-light ph-shield-check"></i>30-day money-back guarantee</div>
+                      </div>
                 </div>
-            </div>
-        </div>
-    </main>
+            </main>
 
     <!-- section2 end -->
 
